@@ -59,3 +59,9 @@ public class CityAPI {
         return new ResponseEntity<>(body, status);
     }
 }
+
+/*
+As you can see, this RapidAPI already has the idea of a Korean culture page within it.
+This displays information about a Korean city, in this case it is Seoul but can be
+Adapted to any city or country details that people may want. 
+*/
