@@ -6,4 +6,4 @@ RUN apk update && apk upgrade && \
 RUN git clone https://github.com/nighthawkcoders/spring_portfolio.git /app
 RUN ./mvnw package
 CMD ["java", "-jar", "target/spring-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8085
+EXPOSE 8080
