@@ -21,6 +21,17 @@ img.emoji{
 .page-content {
         -webkit-font-smoothing: antialiased !important;
         text-rendering: optimizeLegibility !important;
+        margin: 0;
+        height: 100%;
+        background-image: url("https://wallpaperaccess.com/full/2039809.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:100% 100%;
+        min-height:100%;
+        min-width:100%;
+        background-size:cover;
+        margin: 0;
+        height: 100%;
         font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
 }
 
