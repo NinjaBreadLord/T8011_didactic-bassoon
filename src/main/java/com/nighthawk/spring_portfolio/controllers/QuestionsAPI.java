@@ -14,14 +14,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController // annotation to create a RESTful web services
-@RequestMapping("/dateapi")  //prefix of API
-public class DateAPI {
+@RequestMapping("/questions")  //prefix of API
+public class QuestionsAPI {
     private JSONObject body; //last run result
     private HttpStatus status; //last run status
     String last_run = null; //last run day of month
 
     // GET Covid 19 Stats
-    @GetMapping("/localTime")   //added to end of prefix as endpoint
+    @GetMapping("/wouldyourather")   //added to end of prefix as endpoint
     public ResponseEntity<JSONObject> getTime() {
 
         //calls API once a day, sets body and status properties
@@ -32,13 +32,13 @@ public class DateAPI {
 
                 //RapidAPI header
                 HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("https://world-clock.p.rapidapi.com/jsonp/cet/utc?callback=callback"))
+                    .uri(URI.create("https://would-you-rather.p.rapidapi.com/wyr/random"))
                     .header("X-RapidAPI-Key", "57a15be86bmsh8ab5c9d255b7689p1346f0jsnb3b6bfbfaba4")
-                    .header("X-RapidAPI-Host", "world-clock.p.rapidapi.com")
+                    .header("X-RapidAPI-Host", "would-you-rather.p.rapidapi.com")
                     .method("GET", HttpRequest.BodyPublishers.noBody())
                     .build();
-HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-System.out.println(response.body());
+                HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+                System.out.println(response.body());
 
                 //JSONParser extracts text body and parses to JSONObject
                 this.body = (JSONObject) new JSONParser().parse(response.body());
