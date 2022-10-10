@@ -1,4 +1,4 @@
-package com.nighthawk.spring_portfolio.mvc.songs;
+package com.nighthawk.spring_portfolio.mvc.jokes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController // annotation to simplify the creation of RESTful web services
-@RequestMapping("/api/songs")
-public class SongsApiController {
+@RequestMapping("/api/jokes")
+public class JokesApiController {
 
     // Autowired enables Control to connect HTML and POJO Object to database easily for CRUD operations
     @Autowired
-    private SongsJpaRepository repository;
+    private JokesJpaRepository repository;
 
     /*
-    GET List of Songs
+    GET List of Jokes
      */
     @GetMapping("/all")
-    public ResponseEntity<List<Songs>> getSongs() {
-        return new ResponseEntity<>( repository.findAllByOrderBySongAsc(), HttpStatus.OK);
+    public ResponseEntity<List<Jokes>> getJokes() {
+        return new ResponseEntity<>( repository.findAllByOrderByJokeAsc(), HttpStatus.OK);
     }
 }
