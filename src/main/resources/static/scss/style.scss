@@ -21,13 +21,24 @@ img.emoji{
 .page-content {
         -webkit-font-smoothing: antialiased !important;
         text-rendering: optimizeLegibility !important;
+        margin: 0;
+        height: 100%;
+        background-image: url("https://wallpaperaccess.com/full/2039809.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:100% 100%;
+        min-height:100%;
+        min-width:100%;
+        background-size:cover;
+        margin: 0;
+        height: 100%;
         font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
 }
 
 // make non-headings slightly lighter
 .post-content p, .post-content li {
    font-size: 20px;
-   color: #515151;
+   color: #1e263f;
 }
 
 .post-link{
@@ -150,7 +161,7 @@ h6:hover .anchor-link {
 .page-description {
   margin-top: .5rem !important;
   margin-bottom: .5rem !important;
-  color: #585858;
+  color: #8eb3c5;
   font-size: 115%;
 }
 
@@ -274,8 +285,8 @@ pre code {
 
 .page-content {
     font-family: "Georgia", "Liberation Serif", "Noto Serif", serif !important;
-    color: #201e1f;
-    background-color: #f1f7f7;
+    color: #1e263f;
+    background-color: #8eb3c5;
  }
 
 h1, h2, h3, h4 {
