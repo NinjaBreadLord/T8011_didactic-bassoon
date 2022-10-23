@@ -20,9 +20,14 @@ public class SongsInit {
 
             // starting songs
             final String[] songsArray = {
-                "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/2qQpFbqqkLOGySgNK8wBXt?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='0' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
-                "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/7BY005dacJkbO6EPiOh2wb?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='0' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
-                "<iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/27PTYw4GXEbY08C8pui11I?utm_source=generator' width='100%' height='352' frameBorder='0' allowfullscreen='0' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>"
+                "https://open.spotify.com/embed/track/5QDLhrAOJJdNAmCTJ8xMyW?utm_source=generator",
+                "https://open.spotify.com/embed/track/1mWdTewIgB3gtBM3TOSFhB?utm_source=generator",
+                "https://open.spotify.com/embed/track/1utDFK1ARQcuZSwapf3cfb?utm_source=generator",
+                "https://open.spotify.com/embed/track/2gYj9lubBorOPIVWsTXugG?utm_source=generator",
+                "https://open.spotify.com/embed/track/6wNKKoUQfLPmch7cqSFytV?utm_source=generator",
+                "https://open.spotify.com/embed/track/1H3i6WXxrJB7LEoH5iStvb?utm_source=generator",
+                "https://open.spotify.com/embed/track/6yGQ86UppYULzTCxAWgwVN?utm_source=generator",
+                "https://open.spotify.com/embed/track/0RqzUS7AkBhQDrBxcGFeDv?utm_source=generator"
                 
             };
 
