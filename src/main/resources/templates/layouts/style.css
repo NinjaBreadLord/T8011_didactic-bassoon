@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 .header{
     height: 100vh;
@@ -10,3 +12,22 @@
     background-size: cover;
     position: relative; 
 }
+
+
+/* ------------------------------------------------ */
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   padding-left: 10%;
+   text-align: left;
+   transform: translate (-50%,-50%);
+   
+   
+}
+.wrapper:hover #slide {
+    transition: 1s;
+    left: 0;
+}
+
+
