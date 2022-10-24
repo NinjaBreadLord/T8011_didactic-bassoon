@@ -18,7 +18,7 @@ public class SongsInit {
         return args -> {
             // Fail safe data validations
 
-            // starting songs
+            // starting songs - embed links for frontend
             final String[] songsArray = {
                 "https://open.spotify.com/embed/track/5QDLhrAOJJdNAmCTJ8xMyW?utm_source=generator",
                 "https://open.spotify.com/embed/track/1mWdTewIgB3gtBM3TOSFhB?utm_source=generator",
@@ -28,7 +28,6 @@ public class SongsInit {
                 "https://open.spotify.com/embed/track/1H3i6WXxrJB7LEoH5iStvb?utm_source=generator",
                 "https://open.spotify.com/embed/track/6yGQ86UppYULzTCxAWgwVN?utm_source=generator",
                 "https://open.spotify.com/embed/track/0RqzUS7AkBhQDrBxcGFeDv?utm_source=generator"
-                
             };
 
             // make sure Song database is populated with starting songs

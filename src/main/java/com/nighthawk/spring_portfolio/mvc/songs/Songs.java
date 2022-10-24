@@ -18,6 +18,7 @@ public class Songs {
     @Column(unique=true)
     private String song;
     
+    // Int initialized
     private int haha;
     private int boohoo;
     
