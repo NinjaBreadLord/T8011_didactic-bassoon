@@ -11,3 +11,4 @@ public interface SongsJpaRepository extends JpaRepository<Songs, Long> {
     List<Songs> findAllByOrderBySongAsc();
     List<Songs> findBySongIgnoreCase(String name);
 }
+
