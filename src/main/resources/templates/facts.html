@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/base}" lang="en">
 <head>
 <title>FUN-FACTS</title>
 </head>
-<body>
 
+<body>
+    <th:block layout:fragment="body" th:remove="tag">
     <h1>Here are some Fun Facts About Korean Culture:</h1> <br>
     <p><img src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png" 
         width="64" 
         height="64"/> This is a paragraph.</p>
-
+</th:block>
 </body>
 </html>
