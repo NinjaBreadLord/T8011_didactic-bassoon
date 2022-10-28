@@ -55,4 +55,19 @@ public class SongsApiController {
         // Bad ID
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
+
+    // Get a random song for 
+    @GetMapping("/random")
+    public ResponseEntity<Songs> dailySong() {
+
+        // Get list of all songs
+        List<Songs> songlist = repository.findAllByOrderBySongAsc();
+
+        // Initialize random, and get a random value from song length
+        Random rand = new Random();
+        Songs selected = songlist.get(rand.nextInt(songlist.size()));
+
+        // Return selected song as response entity
+        return new ResponseEntity<>(selected, HttpStatus.OK);
+    }
 }
