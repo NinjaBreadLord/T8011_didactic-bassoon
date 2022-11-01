@@ -3,15 +3,15 @@
 <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layouts/base}" lang="en">
-
+{ % block body % }
 <head>
     <meta charset="utf-8">
     <title>Korean Pop Culture</title>
+    <link rel="stylesheet" type="text/css" th:href="@{layouts/style.css}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <section class="header">
 "wrapper text-box">
@@ -22,5 +22,5 @@
       </div>
     </section>
 
-
+{ % endblock % }
 </html>
