@@ -27,7 +27,14 @@ public class SongsInit {
                 "https://open.spotify.com/embed/track/6wNKKoUQfLPmch7cqSFytV?utm_source=generator",
                 "https://open.spotify.com/embed/track/1H3i6WXxrJB7LEoH5iStvb?utm_source=generator",
                 "https://open.spotify.com/embed/track/6yGQ86UppYULzTCxAWgwVN?utm_source=generator",
-                "https://open.spotify.com/embed/track/0RqzUS7AkBhQDrBxcGFeDv?utm_source=generator"
+                "https://open.spotify.com/embed/track/0RqzUS7AkBhQDrBxcGFeDv?utm_source=generator",
+                "https://open.spotify.com/embed/track/3lOMJTQTd6J34faYwASc33?utm_source=generator",
+                "https://open.spotify.com/embed/track/3gFcGnU4kTdMYLXDjH1TK8?utm_source=generator",
+                "https://open.spotify.com/embed/track/13KR2yNRDrbKwR3dOKCDl4?utm_source=generator",
+                "https://open.spotify.com/embed/track/10SRMwb9EuVS1K9rYsBfHQ?utm_source=generator",
+                "https://open.spotify.com/embed/track/0fZRNhPJ4AGmwY7rkpdbqK?utm_source=generator",
+                "https://open.spotify.com/embed/track/5YMXGBD6vcYP7IolemyLtK?utm_source=generator"
+
             };
 
             // make sure Song database is populated with starting songs

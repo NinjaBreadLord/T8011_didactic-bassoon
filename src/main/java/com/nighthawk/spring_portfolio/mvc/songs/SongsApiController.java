@@ -16,6 +16,10 @@ public class SongsApiController {
     @Autowired
     private SongsJpaRepository repository;
 
+    // recentDate and dailyS are necessary for daily song function
+    private String recentDate = null;
+    private Songs dailyS = null;
+
     /*
     GET List of Songs
      */
@@ -55,4 +59,43 @@ public class SongsApiController {
         // Bad ID
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
+
+    // Get a random song for 
+    @GetMapping("/random")
+    public ResponseEntity<Songs> randomSong() {
+
+        // Get list of all songs
+        List<Songs> songlist = repository.findAllByOrderBySongAsc();
+
+        // Initialize random, and get a random value from song length
+        Random rand = new Random();
+        Songs selected = songlist.get(rand.nextInt(songlist.size()));
+
+        // Return selected song as response entity
+        return new ResponseEntity<>(selected, HttpStatus.OK);
+    }
+
+    @GetMapping("/daily")
+    public ResponseEntity<Songs> dailySong() {
+
+        // Get list of all songs
+        List<Songs> songlist = repository.findAllByOrderBySongAsc();
+
+        // Initialize random, and get a random value from song length
+        String todayDate = new Date().toString().substring(0,10); 
+
+        if (recentDate == null || !todayDate.equals(recentDate) || dailyS == null) {
+            // sets recentDate to todayDate
+            recentDate = todayDate;
+
+            // Sets dailyS to new random song
+            Random rand = new Random();
+            dailyS = songlist.get(rand.nextInt(songlist.size()));
+        }
+        
+
+        // Return selected song as response entity
+        return new ResponseEntity<>(dailyS, HttpStatus.OK);
+    }
+
 }
